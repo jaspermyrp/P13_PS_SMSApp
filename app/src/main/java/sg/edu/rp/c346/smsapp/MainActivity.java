@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
 
                 // Get number of Recipients //
                 String recipient = etTo.getText().toString().trim();
-                String[] recipients = recipient.split(",");
 
                 // Get message content //
                 String message = etContent.getText().toString();

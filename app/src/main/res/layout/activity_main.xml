@@ -16,8 +16,7 @@
             android:id="@+id/tvTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:text="To:" />
+            tools:text="@string/to" />
 
         <EditText
             android:id="@+id/etTo"
@@ -37,7 +36,7 @@
             android:id="@+id/tvContent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Content:" />
+            android:text="@string/content" />
 
         <EditText
             android:id="@+id/etContent"
