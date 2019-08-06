@@ -79,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
                 Uri smsUri = Uri.parse("sms:" + recipient);
                 Intent intent = new Intent(Intent.ACTION_VIEW, smsUri);
-                intent.putExtra("address", recipient);
                 intent.putExtra("sms_body", message);
                 startActivity(intent);
 
