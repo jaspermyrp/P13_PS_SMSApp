@@ -16,7 +16,7 @@
             android:id="@+id/tvTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="@string/to" />
+            android:text="@string/to" />
 
         <EditText
             android:id="@+id/etTo"
