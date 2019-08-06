@@ -87,16 +87,22 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
     private void validationChecks() {
-        if (etTo.getText().toString().trim().isEmpty()) {
-            Toast.makeText(this, "Enter a recipient.", Toast.LENGTH_SHORT).show();
-        }
+        String to = etTo.getText().toString().trim();
+        String content = etContent.getText().toString().trim();
 
-        if (etContent.getText().toString().trim().isEmpty()) {
-            Toast.makeText(this, "Enter content.", Toast.LENGTH_SHORT).show();
+        if (to.isEmpty() && content.isEmpty()) {
+            Toast.makeText(this, "Enter all fields!", Toast.LENGTH_SHORT).show();
+        } else {
+            if (to.isEmpty()) {
+                Toast.makeText(this, "Enter a recipient.", Toast.LENGTH_SHORT).show();
+            }
+
+            if (content.isEmpty()) {
+                Toast.makeText(this, "Enter content.", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
